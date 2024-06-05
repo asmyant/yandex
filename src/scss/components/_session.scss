@@ -1,0 +1,123 @@
+.session {
+  $self: &;
+
+  &__row {
+    display: grid;
+    grid-template-columns: em(303) 1fr;
+    min-height: em(56);
+
+    @media (max-width: $mobile) {
+      min-height: initial;
+
+      &:not(:last-child) {
+        margin-bottom: em(14);
+        padding-bottom: em(12);
+      }
+    }
+
+    &--mobile-inline {
+      @media (max-width: $mobile) {
+        display: flex;
+      }
+    }
+
+    &:not(#{$self}__row--mobile-inline) {
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
+
+    &:first-child, &:last-child {
+      min-height: initial;
+    }
+
+    &:last-child {
+      #{$self}__col {
+        padding-top: em(12);
+
+        @media (max-width: $mobile) {
+          padding-top: 0;
+        }
+      }
+    }
+
+    &:first-child {
+      #{$self}__col {
+        padding-bottom: em(10);
+
+        @media (max-width: $mobile) {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      border-bottom: em(2) solid $color_light_100;
+    }
+  }
+
+  &__price {
+    &:not(:last-child) {
+      margin-right: em(12);
+
+      @media (max-width: $mobile) {
+        margin-right: em(5);
+      }
+    }
+
+    &--old {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 50%;
+        margin-top: -1px;
+        height: 2px;
+        background-color: $color_secondary;
+      }
+    }
+  }
+
+  &__label, &__value {
+    font-size: em(20);
+    line-height: em(21);
+  }
+
+  &__label {
+    color: $color_dark_50;
+    opacity: .7;
+  }
+
+  &__value {
+    font-weight: 600;
+
+    @media (max-width: $mobile) {
+      padding-top: em(9);
+    }
+
+    #{$self}__row--mobile-inline & {
+      @media (max-width: $mobile) {
+        padding-top: 0;
+        padding-left: em(10);
+      }
+    }
+  }
+
+  &__col {
+    align-items: center;
+    display: flex;
+
+    &:last-child {
+      border-left: em(2) solid $color_light_100;
+      padding-left: em(16);
+
+      @media (max-width: $mobile) {
+        border-left: none;
+        padding-left: 0;
+      }
+    }
+  }
+}

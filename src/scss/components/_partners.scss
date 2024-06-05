@@ -1,0 +1,47 @@
+.partners {
+  margin-bottom: em(140);
+  position: relative;
+
+  @media (max-width: $mobile) {
+    margin-bottom: em(100);
+  }
+
+  &__controls.swiper-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: em(60);
+    z-index: 50;
+
+    @media (max-width: $mobile) {
+      position: static;
+      height: initial;
+      justify-content: center;
+    }
+  }
+
+  &__slider {
+    margin-top: em(60);
+
+    @media (max-width: $mobile) {
+      margin-bottom: em(40);
+      margin-top: em(40);
+    }
+  }
+
+  &__title {
+    font-size: em(54);
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: $ff_heading;
+    width: 100%;
+    white-space: nowrap;
+
+    @media (max-width: $mobile) {
+      font-size: em(36);
+      line-height: 1.1;
+      white-space: initial;
+    }
+  }
+}

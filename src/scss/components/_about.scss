@@ -1,0 +1,139 @@
+.about {
+  margin-top: em(80);
+  margin-bottom: em(175);
+
+  @media (max-width: $mobile) {
+    margin-bottom: em(115);
+  }
+
+  @media (max-width: $mobile) {
+    margin-top: em(48);
+  }
+
+  &__top {
+    margin-bottom: em(65);
+
+    @media (max-width: $mobile) {
+      margin-bottom: em(20);
+    }
+  }
+}
+
+.about-title {
+  font-size: em(36);
+  font-family: $ff_heading;
+  text-transform: uppercase;
+  line-height: 1.35;
+
+  @media (max-width: $mobile) {
+    font-size: em(28);
+    line-height: 1.35;
+  }
+
+  &--has-mobile {
+    display: none;
+
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
+  &__item {
+    &--has-desktop {
+      @media (max-width: $mobile) {
+        display: none;
+      }
+    }
+
+    &--highlight {
+      color: $color_secondary;
+      font-weight: 700;
+    }
+  }
+}
+
+.about-top {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile) {
+    display: block;
+  }
+
+  &__picture {
+    margin-left: em(65);
+    display: block;
+
+    @media (max-width: $mobile) {
+      margin-left: 0;
+      margin-top: em(24);
+      margin-bottom: em(25);
+    }
+  }
+
+  &__image {
+    width: em(400);
+    height: auto;
+    border-radius: 50%;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+}
+
+.about-bottom {
+  display: flex;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
+
+  &__session {
+    margin-bottom: em(45);
+    margin-top: em(60);
+
+    @media (max-width: $mobile) {
+      margin-top: em(40);
+      margin-bottom: em(40);
+    }
+  }
+
+  &__info {
+    color: $color_accent;
+    font-size: em(20);
+    line-height: em(24);
+
+    @media (max-width: $mobile) {
+      font-size: em(18);
+      line-height: em(21);
+    }
+  }
+
+  &__wrapper {
+    flex-grow: 1;
+  }
+
+  &__title {
+    max-width: em(300);
+  }
+
+  &__picture {
+    margin-right: em(45);
+
+    @media (max-width: $mobile) {
+      margin-left: em(-20);
+      margin-right: em(-20);
+      margin-bottom: em(5);
+    }
+  }
+
+  &__image {
+    width: em(474);
+    height: auto;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+}

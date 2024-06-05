@@ -1,0 +1,115 @@
+.steps {
+  margin-bottom: em(200);
+  position: relative;
+
+  @media (max-width: $mobile) {
+    margin-bottom: em(120);
+  }
+
+  &__slide {
+    &:nth-child(3) {
+      grid-row: span 2;
+    }
+
+    &:last-child {
+      grid-column: span 2;
+    }
+  }
+
+  &__head {
+    margin-bottom: em(55);
+    max-width: em(800);
+    position: relative;
+  }
+
+  &__controls.swiper-controls {
+    display: none;
+
+    @media (max-width: $mobile) {
+      margin-top: em(28);
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    bottom: em(0);
+    right: em(-45);
+    z-index: 50;
+
+    @media (max-width: $mobile) {
+      bottom: initial;
+      top: em(200);
+      right: em(-10);
+      transform: rotate(-5deg);
+    }
+  }
+
+  &__slider {
+    @media (max-width: $mobile) {
+      padding-left: em(20);
+      padding-right: em(20);
+    }
+  }
+
+  &__content {
+    @media (max-width: $mobile) {
+      margin-left: em(-20);
+      margin-right: em(-20);
+      margin-top: em(147);
+    }
+  }
+
+  &__image {
+    width: em(375);
+    height: auto;
+
+    @media (max-width: $mobile) {
+      width: em(330);
+    }
+  }
+
+  &__text {
+    position: absolute;
+    font-size: em(20);
+    line-height: em(20);
+    max-width: em(250);
+    color: $color_accent;
+    left: em(240);
+    bottom: em(5);
+
+    @media (max-width: $mobile) {
+      position: static;
+      margin-top: em(10);
+      max-width: 100%;
+      font-size: em(18);
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: em(20);
+
+    @media (max-width: $mobile) {
+      display: flex;
+      gap: 0;
+    }
+  }
+
+  &__item {
+    height: 100%;
+  }
+
+  &__title {
+    font-size: em(54);
+    line-height: 1.15;
+    font-family: $ff_heading;
+    text-transform: uppercase;
+
+    @media (max-width: $mobile) {
+      font-size: em(36);
+    }
+  }
+}

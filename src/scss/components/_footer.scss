@@ -1,0 +1,11 @@
+.site-footer {
+  padding-top: em(40);
+  padding-bottom: em(70);
+  background: $color_bg;
+
+  &__text {
+    font-size: em(16);
+    line-height: em(19);
+    opacity: 60%;
+  }
+}

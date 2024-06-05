@@ -1,0 +1,48 @@
+.step {
+  $self: &;
+
+  background: $color_bg url("../images/step-layer.jpg") repeat;
+  padding: em(20);
+  display: flex;
+
+  @media (max-width: $mobile) {
+    min-height: em(300);
+    padding-top: em(62);
+  }
+
+  &__text {
+    font-size: em(20);
+    font-weight: 500;
+
+    @media (max-width: $mobile) {
+      font-size: em(18);
+    }
+  }
+
+  &__wrapper {
+    #{$self}--size-lg & {
+      max-width: em(445);
+    }
+  }
+
+  &__index {
+    margin-right: em(16);
+  }
+}
+
+.step-index {
+  border-radius: 50%;
+  width: 100%;
+  max-width: em(36);
+  height: em(36);
+  background-color: $color_light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    font-size: em(20);
+    line-height: em(24);
+    font-weight: 600;
+  }
+}

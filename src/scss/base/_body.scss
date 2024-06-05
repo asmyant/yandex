@@ -1,0 +1,33 @@
+* {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+button, body, input, textarea {
+  font-family: $ff_base;
+}
+
+body {
+  font-family: $ff_base;
+  font-weight: 400;
+  color: $color_dark;
+  font-size: vw(16, 1920);
+  line-height: 1.2;
+
+  @media (max-width: 1640px) {
+    font-size: vw(16, 1366);
+  }
+
+  @media (max-width: $mobile) {
+    font-size: vw(16, 375);
+  }
+}

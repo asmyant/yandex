@@ -1,0 +1,53 @@
+.running-line {
+  background: $color_secondary;
+  display: flex;
+  flex-wrap: nowrap;
+  min-height: em(60);
+  white-space: nowrap;
+  align-items: center;
+  text-transform: uppercase;
+  overflow: hidden;
+
+  @media (max-width: $mobile) {
+    min-height: em(38);
+  }
+
+  &__item {
+    padding-left: em(15);
+    padding-right: em(15);
+    position: relative;
+
+    &::before {
+      content: '';
+      right: em(-4);
+      width: em(6);
+      top: 50%;
+      margin-top: em(-3);
+      height: em(6);
+      border-radius: 50%;
+      background: $color_light;
+      position: absolute;
+    }
+  }
+
+  &__text {
+    font-size: em(22);
+    line-height: em(24);
+    font-family: $ff_heading;
+    color: $color_light;
+    animation: running-line 10s linear infinite;
+
+    @media (max-width: $mobile) {
+      font-size: em(16);
+    }
+  }
+}
+
+@keyframes running-line {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
