@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Превратите уездный город в столицу земного шара</title>
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+     href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+     rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <img loading="lazy" src="images/logo.svg" alt="Клуб четырех коней" class="site-header__logo" width="245"
+         height="36">
+
+    <div class="site-header__content">
+      <h1 class="site-header__title site-header-title">
+        <span class="site-header-title__item">Превратите уездный город</span>
+        <span class="site-header-title__item site-header-title__item--align-center">в столицу</span>
+        <span class="site-header-title__item site-header-title__item--align-right">земного шара</span>
+      </h1>
+
+      <span class="site-header__text">
+        Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
+      </span>
+
+      <div class="site-header__actions">
+        <a href="#start" type="button" class="site-header__action site-header-action site-header-action--theme-primary">
+          <span class="site-header-action__text">
+              Поддержать шахматную мысль
+          </span>
+        </a>
+
+        <a href="#about" type="button" class="site-header__action site-header-action site-header-action--theme-solid">
+          <span class="site-header-action__text">
+              Подробнее о турнире
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="site-header__layer site-header-layer">
+      <picture>
+        <source
+           srcset="images/header/city/city-mobile.png"
+           media="(max-width: 992px)"
+           type="image/webp"
+        />
+
+        <source
+           srcset="images/header/city/city-mobile.webp"
+           media="(max-width: 992px)"
+           type="image/webp"
+        />
+
+        <source
+           srcset="images/header/city/city.webp 1x, images/header/city/city-2x.webp 2x"
+           type="image/webp"
+        />
+
+        <img
+           src="images/header/city/city.png"
+           srcset="images/header/city/city-2x.png 2x"
+           alt="Город"
+           class="site-header-layer__city"
+        >
+      </picture>
+
+      <div class="site-header-layer__container container">
+        <picture class="site-header-layer__sun site-header-layer-sun">
+          <source
+             srcset="images/header/sun/sun.webp 1x, images/header/sun/sun-2x.webp 2x"
+             type="image/webp"
+          />
+
+          <img
+             src="images/header/sun/sun.png"
+             srcset="images/header/sun/sun-2x.png 2x"
+             alt="Солнце"
+             class="site-header-layer-sun__image"
+          >
+        </picture>
+
+        <picture class="site-header-layer-horse site-header-layer__horse js-header-horse">
+          <source
+             srcset="images/figures/horse.webp 1x, images/figures/horse-2x.webp 2x"
+             type="image/webp"
+          />
+          <img
+             src="images/figures/horse.png"
+             srcset="images/figures/horse-2x.png 2x"
+             alt="Конь"
+             class="site-header-layer-horse__image"
+          >
+        </picture>
+
+        <picture class="site-header-layer-pawn site-header-layer__pawn js-header-pawn">
+          <source
+             srcset="images/figures/pawn.webp 1x, images/figures/pawn-2x.webp 2x"
+             type="image/webp"
+          />
+          <img
+             src="images/figures/pawn.png"
+             srcset="images/figures/pawn-2x.png 2x"
+             class="site-header-layer-pawn__image"
+             alt="Пешка"
+          >
+        </picture>
+
+        <picture class="site-header-layer-queen site-header-layer__queen js-header-queen">
+          <source
+             srcset="images/figures/queen.webp 1x, images/figures/queen-2x.webp 2x"
+             type="image/webp"
+          />
+          <img
+             src="images/figures/queen.png"
+             srcset="images/figures/queen-2x.png 2x"
+             class="site-header-layer-queen__image"
+             alt="Королева"
+          >
+        </picture>
+
+        <picture class="site-header-layer-king site-header-layer__king js-header-king">
+          <source
+             srcset="images/figures/king.webp 1x, images/figures/king-2x.webp 2x"
+             type="image/webp"
+          />
+          <img
+             src="images/figures/king.png"
+             srcset="images/figures/king-2x.png 2x"
+             class="site-header-layer-king__image"
+             alt="Кароль"
+          >
+        </picture>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="site-main">
+  <div class="running-line">
+    
+      <div class="running-line__item">
+        <span class="running-line__text">
+          Шахматы двигают вперёд не только культуру, но и экономику!
+        </span>
+      </div>
+    
+      <div class="running-line__item">
+        <span class="running-line__text">
+          Шахматы двигают вперёд не только культуру, но и экономику!
+        </span>
+      </div>
+    
+  </div>
+
+  <div class="container">
+    <div id="start" class="about">
+      <div class="about__top about-top">
+        <h2 class="about__title about-title">
+          <span class="about-title__item">
+            Чтобы поддержать Международный васюкинский турнир
+          </span>
+          <span class="about-title__item--has-desktop">посетите лекцию на тему:</span>
+          <span class="about-title__item about-title__item--has-desktop about-title__item--highlight">
+            «Плодотворная дебютная идея»
+          </span>
+        </h2>
+
+        <picture class="about-top__picture">
+          <source
+             srcset="images/about/about-top.webp 1x, images/about/about-top-2x.webp 2x"
+             type="image/webp"
+          >
+
+          <img loading="lazy" src="images/about/about.png" srcset="images/about/about-2x.png 2x" alt="Партия" class="about-top__image">
+        </picture>
+
+        <h2 class="about__title about-title about-title--has-mobile">
+          <span class="about-title__item">посетите лекцию на тему:</span>
+
+          <span class="about-title__item about-title__item--highlight">
+            «Плодотворная дебютная идея»
+          </span>
+        </h2>
+      </div>
+
+      <div class="about__bottom about-bottom">
+        <picture class="about-bottom__picture">
+          <source
+             srcset="images/about/about-bottom.webp 1x, images/about/about-bottom.webp 2x"
+             type="image/webp"
+          />
+
+          <img loading="lazy" srcset="images/about/about-bottom-2x.jpg 2x" src="images/about/about-bottom.jpg"
+               alt="Сеанс" width="530" height="611" class="about-bottom__image">
+        </picture>
+
+        <div class="about-bottom__wrapper">
+          <h2 class="about-bottom__title about-title">
+            <span class="about-title__item">и Сеанс</span>
+            <span
+               class="about-title__item about-title__item--highlight">одновременной игры в шахматы на 160 досках</span>
+            <span class="about-title__item">гроссмейстера О. Бендера</span>
+          </h2>
+
+          <div class="session about-bottom__session">
+            <div class="session__row">
+              <div class="session__col">
+                <div class="session__label">Место проведения:</div>
+              </div>
+              <div class="session__col">
+                <div class="session__value">Клуб «Картонажник»</div>
+              </div>
+            </div>
+
+            <div class="session__row">
+              <div class="session__col">
+                <div class="session__label">Дата и время мероприятия:</div>
+              </div>
+              <div class="session__col">
+                <div class="session__value">22 июня 1927 г. в 18:00</div>
+              </div>
+            </div>
+
+            <div class="session__row">
+              <div class="session__col">
+                <div class="session__label">Стоимость входных билетов:</div>
+              </div>
+              <div class="session__col">
+                <div class="session__value">20 коп.</div>
+              </div>
+            </div>
+
+            <div class="session__row session__row--mobile-inline">
+              <div class="session__col">
+                <div class="session__label">Плата за игру:</div>
+              </div>
+              <div class="session__col">
+                <div class="session__value">50 коп.</div>
+              </div>
+            </div>
+
+            <div class="session__row">
+              <div class="session__col">
+                <div class="session__label">Взнос на телеграммы:</div>
+              </div>
+              <div class="session__col">
+                <div class="session__value">
+                  <span class="session__price session__price--old">100 руб.</span>
+
+                  <span class="session__price">21 руб. 16 коп.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-bottom__info">По всем вопросам обращаться в администрацию к К. Михельсону</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="steps">
+      <div class="steps__head">
+        <h2 class="steps__title">Этапы преображения Васюков</h2>
+        <div class="steps__text">Будущие источники обогащения васюкинцев</div>
+      </div>
+
+      <div class="steps__content">
+        <div class="steps__slider swiper js-steps-slider">
+          <div class="swiper-wrapper steps__grid">
+            <div class="swiper-slide steps__slide">
+              <div class="steps__item step">
+                <div class="step__index step-index">
+                  <span class="step-index__text">1</span>
+                </div>
+
+                <div class="step__wrapper">
+                  <span class="step__text">
+                    Строительство железнодорожной магистрали Москва-Васюки
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide steps__slide">
+              <div class="steps__item step">
+                <div class="step__index step-index">
+                  <span class="step-index__text">2</span>
+                </div>
+
+                <div class="step__wrapper">
+            <span class="step__text">
+              Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
+            </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide steps__slide">
+              <div class="steps__item step">
+                <div class="step__index step-index">
+                  <span class="step-index__text">3</span>
+                </div>
+
+                <div class="step__wrapper">
+            <span class="step__text">
+              Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры,
+              шоколадных конфет
+            </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide steps__slide">
+              <div class="steps__item step">
+                <div class="step__index step-index">
+                  <span class="step-index__text">4</span>
+                </div>
+
+                <div class="step__wrapper">
+                <span class="step__text">
+                  Строительство дворца для турнира
+                </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide steps__slide">
+              <div class="steps__item step">
+                <div class="step__index step-index">
+                  <span class="step-index__text">5</span>
+                </div>
+
+                <div class="step__wrapper">
+                <span class="step__text">
+                  Размещение гаражей <br> для гостевого автотранспорта
+                </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide steps__slide">
+              <div class="steps__item step">
+                <div class="step__index step-index">
+                  <span class="step-index__text">6</span>
+                </div>
+
+                <div class="step__wrapper">
+                <span class="step__text">
+                  Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
+                </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide steps__slide">
+              <div class="steps__item step step--size-lg">
+                <div class="step__index step-index">
+                  <span class="step-index__text">7</span>
+                </div>
+
+                <div class="step__wrapper">
+                <span class="step__text">
+                  Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы
+                  света, включая Лос-Анжелос и Мельбурн
+                </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="steps__controls swiper-controls">
+            <button type="button" class="js-steps-slider__prev swiper-controls__arrow" aria-label="Прошлый слайд">
+              <svg width="12" height="20" class="swiper-controls__icon">
+                <use href="images/svg-icons.svg#arrow-prev"/>
+              </svg>
+            </button>
+
+            <div class="js-steps-slider__pagination swiper-controls__pagination"></div>
+
+            <button type="button" class="js-steps-slider__next swiper-controls__arrow" aria-label="Следующий слайд">
+              <svg width="12" height="20" class="swiper-controls__icon">
+                <use href="images/svg-icons.svg#arrow-next"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <picture class="steps__picture">
+        <source srcset="images/fly/fly.webp 1x, images/fly/fly-2x.webp 2x" type="image/webp">
+
+        <img loading="lazy" src="images/fly/fly.png" srcset="images/fly/fly-2x.png 2x" alt="Самолет"
+             class="steps__image">
+      </picture>
+    </div>
+
+    <div class="partners swiper js-partners-slider">
+      <h2 class="partners__title">Участники турнира</h2>
+
+      <div class="partners__slider swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="partner">
+            <picture>
+              <source
+                 srcset="images/partner/partner.webp 1x, images/partner/partner.webp 2x"
+                 type="image/webp"
+              >
+
+              <img loading="lazy" src="images/partner/partner.png" srcset="images/partner/partner-2x.png"
+                   alt="Хозе-Рауль Капабланка" width="320" height="320" class="partner__image">
+            </picture>
+
+            <div class="partner__content">
+              <span class="partner__title">Хозе-Рауль Капабланка</span>
+            </div>
+
+            <div class="partner-experience partner__experience">
+              <span class="partner-experience__text">Чемпион мира по шахматам</span>
+            </div>
+
+            <button class="partner-button partner__button">
+                <span class="partner-button__text">
+                  Подробнее
+                </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="partner">
+            <picture>
+              <source
+                 srcset="images/partner/partner.webp 1x, images/partner/partner.webp 2x"
+                 type="image/webp"
+              >
+
+              <img loading="lazy" src="images/partner/partner.png" srcset="images/partner/partner-2x.png"
+                   alt="Эммануил Ласкер" width="320" height="320" class="partner__image">
+            </picture>
+
+            <div class="partner__content">
+              <span class="partner__title">Эммануил Ласкер</span>
+            </div>
+
+            <div class="partner-experience partner__experience">
+              <span class="partner-experience__text">Чемпион мира по шахматам</span>
+            </div>
+
+            <button class="partner-button partner__button">
+                <span class="partner-button__text">
+                  Подробнее
+                </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="partner">
+            <picture>
+              <source
+                 srcset="images/partner/partner.webp 1x, images/partner/partner.webp 2x"
+                 type="image/webp"
+              >
+
+              <img loading="lazy" src="images/partner/partner.png" srcset="images/partner/partner-2x.png"
+                   alt="Александр Алехин" width="320" height="320" class="partner__image">
+            </picture>
+
+            <div class="partner__content">
+              <span class="partner__title">Александр Алехин</span>
+            </div>
+
+            <div class="partner-experience partner__experience">
+              <span class="partner-experience__text">Чемпион мира по шахматам</span>
+            </div>
+
+            <button class="partner-button partner__button">
+                <span class="partner-button__text">
+                  Подробнее
+                </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="partner">
+            <picture>
+              <source
+                 srcset="images/partner/partner.webp 1x, images/partner/partner.webp 2x"
+                 type="image/webp"
+              >
+
+              <img loading="lazy" src="images/partner/partner.png" srcset="images/partner/partner-2x.png"
+                   alt="Хозе-Рауль Капабланка" width="320" height="320" class="partner__image">
+            </picture>
+
+            <div class="partner__content">
+              <span class="partner__title">Хозе-Рауль Капабланка</span>
+            </div>
+
+            <div class="partner-experience partner__experience">
+              <span class="partner-experience__text">Чемпион мира по шахматам</span>
+            </div>
+
+            <button class="partner-button partner__button">
+                <span class="partner-button__text">
+                  Подробнее
+                </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="partners__controls swiper-controls">
+        <button type="button" class="js-partners-slider__prev swiper-controls__arrow" aria-label="Прошлый слайд">
+          <svg width="12" height="20" class="swiper-controls__icon">
+            <use href="images/svg-icons.svg#arrow-prev"/>
+          </svg>
+        </button>
+
+        <div class="js-partners-slider__pagination swiper-controls__pagination"></div>
+
+        <button type="button" class="js-partners-slider__next swiper-controls__arrow" aria-label="Следующий слайд">
+          <svg width="12" height="20" class="swiper-controls__icon">
+            <use href="images/svg-icons.svg#arrow-next"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="running-line">
+    
+      <div class="running-line__item">
+        <span class="running-line__text">
+          Шахматы двигают вперёд не только культуру, но и экономику!
+        </span>
+      </div>
+    
+      <div class="running-line__item">
+        <span class="running-line__text">
+          Шахматы двигают вперёд не только культуру, но и экономику!
+        </span>
+      </div>
+    
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__text">
+      Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями можно
+      познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
